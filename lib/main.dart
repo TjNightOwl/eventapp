@@ -68,17 +68,17 @@ class WelcomePage extends StatelessWidget {
                 ),
                 const SizedBox(height: 40),
                 ElevatedButton(
-                  style: ElevatedButton.styleFrom(
-                    primary: Colors.white,
-                    onPrimary: Colors.blueAccent,
-                    padding: const EdgeInsets.symmetric(
-                      horizontal: 40,
-                      vertical: 15,
-                    ),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(30),
-                    ),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.white, // replaces 'primary'
+                  foregroundColor: Colors.blueAccent, // replaces 'onPrimary'
+                  padding: const EdgeInsets.symmetric(
+                    horizontal: 40,
+                    vertical: 15,
                   ),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(30),
+                  ),
+                ),
                   onPressed: () {
                     // 👇 Navigate to HomePage (from homepage.dart)
                     Navigator.push(
