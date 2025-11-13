@@ -3,7 +3,7 @@ import 'db/db_helper.dart';
 import 'models/attendee.dart';
 
 class AttendeeListPage extends StatefulWidget {
-  const AttendeeListPage({Key? key}) : super(key: key);
+  const AttendeeListPage({super.key});
 
   @override
   State<AttendeeListPage> createState() => _AttendeeListPageState();
